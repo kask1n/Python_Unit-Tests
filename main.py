@@ -1,16 +1,13 @@
-# This is a sample Python script.
+from list_comparsion import ListComparer
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+list1 = [1, 2, 3, 4, 5]
+list2 = [5, 6, 7, 8, 9]
 
+comparer = ListComparer(list1, list2)
+comparer.compare_lists()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+average = ListComparer(list1, list2)
+average1 = average.calculate_average(list1)
+average2 = average.calculate_average(list2)
+print("Average of list1:", average1)
+print("Average of list2:", average2)
